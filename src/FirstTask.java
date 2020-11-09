@@ -1,6 +1,8 @@
 public class FirstTask {
 
     public static void main(String[] args) {
+        System.out.println(args[0]);
+        System.out.println(args[1]);
         //писать код здесь
  /*       int x;
         x = 5;
