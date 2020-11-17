@@ -1,7 +1,4 @@
-package dogovor.system;
-
-import java.sql.Date;
-import java.time.LocalDate;
+package ru.kpfu.itis.java.introduction.inheritance.dogovor.system;
 
 public class IndidualDogovor {
     private static int numberOfIndividualContract = 0;
@@ -12,7 +9,6 @@ public class IndidualDogovor {
 
     private String subject;
     private double cost;
-    private Date date;
     private Person person;
     private ResponsibleMan responsibleMan;
 
@@ -24,7 +20,6 @@ public class IndidualDogovor {
     //этот конструктор отвечает только за инициализаю типовых договор
     private IndidualDogovor(Person person, ResponsibleMan responsibleMan) {
         this.subject = "страховка";
-        this.date = Date.valueOf(LocalDate.now());
         this.cost = 50000d;
         this.person = person;
         this.responsibleMan = responsibleMan;
@@ -40,20 +35,12 @@ public class IndidualDogovor {
         return "IndidualDogovor{" +
                 "subject='" + subject + '\'' +
                 ", cost=" + cost +
-                ", date=" + date +
                 ", person=" + person +
                 ", responsibleMan=" + responsibleMan +
                 ", COUNT OF CONTRACTS FOR NOW=" + numberOfIndividualContract + " " + getNumberOfIndividualContract() +
                 '}';
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public double getCost() {
         return cost;
@@ -65,12 +52,10 @@ public class IndidualDogovor {
 
     public IndidualDogovor(String subjectToSet,
                            double cost,
-                           Date date,
                            Person person,
                            ResponsibleMan responsibleMan) {
         this.subject = subjectToSet;
         this.cost = cost;
-        this.date = date;
         this.person = person;
         this.responsibleMan = responsibleMan;
         numberOfIndividualContract++;

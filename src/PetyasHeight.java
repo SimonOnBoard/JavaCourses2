@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class PetyasHeight {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+
         int n = getN();
         int[] height = getHeightArrayByN(n);
         int heightOfPetya = getN();

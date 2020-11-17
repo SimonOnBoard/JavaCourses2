@@ -1,4 +1,4 @@
-package dogovor.system;
+package ru.kpfu.itis.java.introduction.inheritance.dogovor.system;
 
 public class ResponsibleMan {
     private String fio;

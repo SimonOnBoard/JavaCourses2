@@ -2,9 +2,9 @@ package game;
 
 
 public class Player {
-    private int hp;
-    private String name;
-    private String battleCry;
+    protected int hp;
+    protected String name;
+    protected String battleCry;
 
     public Player(String name) {
         this(name, "leroy jenkins");
@@ -46,6 +46,7 @@ public class Player {
         }
     }
 
+    @Override
     public String toString() {
         return "Player{" +
                 "hp=" + hp +

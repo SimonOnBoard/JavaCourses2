@@ -13,6 +13,13 @@ public class Game {
         random = new Random();
     }
 
+    public Player getPlayer1() {
+        return player1;
+    }
+
+    public Player getPlayer2() {
+        return player2;
+    }
 
     public Player getWinner() {
         return winner;

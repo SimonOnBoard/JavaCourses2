@@ -1,18 +1,17 @@
-package dogovor.system;
+package ru.kpfu.itis.java.introduction.inheritance.dogovor;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import ru.kpfu.itis.java.introduction.inheritance.dogovor.system.*;
+
+import static java.lang.Math.*;
 
 public class Main {
     public static void main(String[] args) {
         ResponsibleMan responsibleMan = new ResponsibleMan("Иванов Иван Иванович");
         Person person = new Person("Алексей Алексеевич Алексеев","1234 567890","г.Казань");
         IndidualDogovor dogovor = new IndidualDogovor("Страховка",
-                42352.0d, Date.valueOf(LocalDate.now()),person, responsibleMan);
-//        System.out.println("Dogovor:" + " " + dogovor.date + " "
-//                + dogovor.cost + " " + dogovor.subject + " " + dogovor.responsibleMan + " " + dogovor.person);
+                42352.0d,person, responsibleMan);
+//        System.out.println("Dogovor:" + " " + ru.kpfu.itis.java.introduction.inheritance.dogovor.date + " "
+//                + ru.kpfu.itis.java.introduction.inheritance.dogovor.cost + " " + ru.kpfu.itis.java.introduction.inheritance.dogovor.subject + " " + ru.kpfu.itis.java.introduction.inheritance.dogovor.responsibleMan + " " + ru.kpfu.itis.java.introduction.inheritance.dogovor.person);
 
         IndidualDogovor anotherIndividualContract = new IndidualDogovor(new Person("A A A","B B B","C C C"));
         System.out.println(anotherIndividualContract.getCost());
@@ -20,5 +19,7 @@ public class Main {
         System.out.println(anotherIndividualContract.toString());
         System.out.println(anotherIndividualContract.getResponsibleManInfo());
         System.out.println(IndidualDogovor.getNumberOfIndividualContract());
+        sin(24324d);
     }
+
 }
