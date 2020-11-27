@@ -5,7 +5,7 @@ import ru.kpfu.itis.java.introduction.inheritance.dogovor.system.ResponsibleMan;
 public class Main {
     public static void main(String[] args) {
         Journal journal = new Journal();
-        Player player;
+        Player player = null;
         Player player1;
         Game game;
         for(int i = 0; i < 50; i++){

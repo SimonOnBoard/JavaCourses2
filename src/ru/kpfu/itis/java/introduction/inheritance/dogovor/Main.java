@@ -1,5 +1,6 @@
 package ru.kpfu.itis.java.introduction.inheritance.dogovor;
 
+import dogovor.system.inheritance.system.IndividualContract;
 import ru.kpfu.itis.java.introduction.inheritance.dogovor.system.*;
 
 import static java.lang.Math.*;
@@ -19,7 +20,6 @@ public class Main {
         System.out.println(anotherIndividualContract.toString());
         System.out.println(anotherIndividualContract.getResponsibleManInfo());
         System.out.println(IndidualDogovor.getNumberOfIndividualContract());
-        sin(24324d);
     }
 
 }

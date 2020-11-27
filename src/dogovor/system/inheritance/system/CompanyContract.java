@@ -2,15 +2,15 @@ package dogovor.system.inheritance.system;
 
 import java.sql.Date;
 
-public class CompanyDogovor extends Contract {
+public class CompanyContract extends Contract {
     private Company company;
 
-    public CompanyDogovor(String subject, double cost, Date dueTo, String status, Company company) {
+    public CompanyContract(String subject, double cost, Date dueTo, String status, Company company) {
         super(subject, cost, dueTo, status);
         this.company = company;
     }
 
-    public CompanyDogovor(double cost, Date dueTo, Company company) {
+    public CompanyContract(double cost, Date dueTo, Company company) {
         super(cost, dueTo);
         this.company = company;
     }

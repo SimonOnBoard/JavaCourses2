@@ -2,7 +2,7 @@ package dogovor.system.inheritance.system;
 
 import java.sql.Date;
 
-public class IndividualDogovor extends Contract{
+public class IndividualContract extends Contract{
     private static int numberOfIndividualContract = 0;
     public static int getNumberOfIndividualContract() {
         return numberOfIndividualContract;
@@ -12,13 +12,13 @@ public class IndividualDogovor extends Contract{
     private Person owner;
     private ResponsibleMan responsibleMan;
 
-    public IndividualDogovor(String subject, double cost, Date dueTo, String status, ResponsibleMan responsibleMan, Person person) {
+    public IndividualContract(String subject, double cost, Date dueTo, String status, ResponsibleMan responsibleMan, Person person) {
         super(subject, cost, dueTo, status);
         this.responsibleMan = responsibleMan;
         this.owner = person;
     }
 
-    public IndividualDogovor(double cost, Date dueTo, ResponsibleMan responsibleMan, Person person) {
+    public IndividualContract(double cost, Date dueTo, ResponsibleMan responsibleMan, Person person) {
         super(cost, dueTo);
         this.responsibleMan = responsibleMan;
         this.owner = person;

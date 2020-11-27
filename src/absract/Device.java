@@ -1,7 +1,7 @@
 package absract;
 
 public abstract class Device {
-    private String name;
+    protected String name;
 
     public String getName() {
         return name;
@@ -11,6 +11,9 @@ public abstract class Device {
         this.name = name;
     }
 
+    public Device(String name) {
+        this.name = name;
+    }
 
     public abstract void on();
     public abstract void off();
