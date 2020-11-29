@@ -1,8 +1,10 @@
 package absract;
 
 public class Camera extends Device {
+    private Phone phone;
     public Camera(String name) {
         super(name);
+        phone = new Phone("phone to check");
     }
 
     @Override

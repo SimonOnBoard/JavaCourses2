@@ -2,7 +2,7 @@ package interfaces;
 
 public class Main {
     public static void main(String[] args) {
-        SmartPhone smartPhone = new SmartPhone();
+            SmartPhone smartPhone = new SmartPhone();
         CallInterface callInterface = smartPhone;
         callInterface.makeCall();
         MakePhotoInterface makePhotoInterface = smartPhone;
